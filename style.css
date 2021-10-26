@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  color: #111;
+  background-color: rgb(250, 250, 250);
+}
+
+section .content {
+  display: flex;
+  margin-top: 50px;
+}
+
+.flex-child {
+  flex: 1 auto;
+}
+
+.side-bar {
+  padding: 0 50px;
+}
+
+.side-bar h2 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.side-bar ul {
+  list-style: none;
+}
+
+.side-bar ul li {
+  margin-top: 25px;
+  font-size: 1rem;
+  color: rgb(152, 152, 152);
+}
+
+.side-bar ul li:hover {
+  cursor: pointer;
+  color: rgb(31, 31, 31);
+}
+
+button {
+  margin-top: 50px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 15px 50px;
+  border: 0;
+  border-radius: 30px;
+  color: rgb(250, 250, 250);
+  background-color: #ff4e4e;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(253, 146, 146);
+}
+
+.main-content {
+  margin-top: 50px;
+  padding-left: 50px;
+}
+
+.main-content .head-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-content h1 {
+  font-size: 4rem;
+}
+
+.main-content p {
+  padding: 20px 150px 20px;
+  position: relative;
+  color:rgb(150, 150, 150);
+}
+
+.items {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  gap: 25px;
+  width: auto;
+  height: 200px;
+}
+
+.items .list-item {
+  padding: 25px 0;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+.items .list-item img {
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+.items .list-item:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.items .list-item h2 {
+  font-size: 1rem;
+  margin-top: 25px;
+}
+
+hr{
+    position: absolute;
+    margin-left:150px;
+    width:100px;
+    height: 5px;
+    background-color: #ff4e4e;
+    border: 0;
+    border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  .side-bar {
+    display: none;
+  }
+
+  .items {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+
+  .main-content .head-content {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .main-content {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-content .head-content h1 {
+    margin: 25px;
+    padding: 0;
+    font-size: 24px;
+  }
+  .main-content p {
+    padding: 10px 50px;
+    text-align: justify;
+  }
+
+  .toggle {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 30px;
+    height: 30px;
+    background: #fff url(https://i.ibb.co/SvdccXg/menu.png);
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .cart{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    background: #fff url(https://i.ibb.co/bPV71f0/icone-de-panier-rouge.png);
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  hr{
+    position: relative;
+    margin: 0;
+    margin-left: 50px;
+    width:100px;
+    height: 5px;
+    background-color: #ff4e4e;
+    border: 0;
+    border-radius: 3px;
+    
+}
+
+  
+}
